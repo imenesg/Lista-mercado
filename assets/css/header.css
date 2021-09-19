@@ -1,0 +1,10 @@
+header{
+    background-color: var(--colorBlue);
+    
+}
+.logo{
+    width: 3.125rem;
+}
+.logo img{
+    width: 100%;
+}

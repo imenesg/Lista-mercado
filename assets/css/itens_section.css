@@ -1,0 +1,27 @@
+.itens_section{
+    margin-top:2.50rem;
+}
+.itens_section .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--colorGrey);
+    font-size: 1.5rem;
+
+    margin-top: 1.25rem;
+}
+.price_delete{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+}
+.price_delete>span{
+    color: var(--colorGreen);
+    
+}
+.icon_delete{
+    color: var(--colorRed);
+}

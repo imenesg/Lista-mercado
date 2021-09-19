@@ -1,0 +1,9 @@
+.total_section{
+
+}
+.total{
+    color: var(--colorGreenVariant);
+    font-size: 2.5rem;
+    text-align: right;
+    margin-top: 2.50rem;
+}

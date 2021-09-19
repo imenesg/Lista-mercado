@@ -1,0 +1,32 @@
+.add_item_section{
+    
+
+}
+.add_item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.add_item input{
+    height: 2rem;
+    width: 45%;
+    border-radius: 10px;
+    background-color: var(--colorGrey);
+    
+}
+.box_icon{
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--colorBlue);
+    border-radius: 0px;
+    /*margin-left: 1.25rem;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    border-radius: 10px;
+}
+.icon_edit{
+    color: var(--colorGreen);
+}

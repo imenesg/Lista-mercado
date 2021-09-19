@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+
+    <title>Lista</title>
+    <link rel="stylesheet" href="assets/css/container.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/add_item_section.css">
+    <link rel="stylesheet" href="assets/css/itens_section.css">
+    <link rel="stylesheet" href="assets/css/total_section.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="add_item_section ">
+            <div class="add_item">
+
+                <input class="name_new_item" type="text" placeholder="Item">
+                <input class="price_new_item" type="number" placeholder="Preço sem R$">
+
+                <div class="box_icon icon_edit">
+                    <span class="material-icons icone">edit</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="itens_section">
+
+            <div class="item container">
+                <p>...</p>
+                <div class="price_delete">
+
+                    <span >R$ <span class="price"> 00</span></span>
+
+                    <div class="box_icon icon_delete">
+                        <span class="material-icons icone">delete</span>
+                    </div>
+
+                </div>
+            </div>
+
+            
+
+            
+
+            
+
+        </section>
+
+        <section class="total_section">
+            <h1 class="total">R$0</h1>
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+    <script src="js/addNewItem.js"></script>
+    <script src="js/total.js"></script>
+    <script src="js/deleteItem.js"></script>
+</body>
+
+</html>
