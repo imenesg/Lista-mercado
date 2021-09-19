@@ -15,6 +15,11 @@
     background-color: var(--colorGrey);
     
 }
+.add_item input::placeholder{
+   font-size: 1rem;
+   text-transform:capitalize;
+    
+}
 .box_icon{
     width: 2rem;
     height: 2rem;
