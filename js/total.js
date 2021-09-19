@@ -1,6 +1,6 @@
 var totalToPay = document.querySelector(".total")
 
-var addButton = document.querySelector(".icon_edit")
+var addButton = document.querySelector(".icon_add")
 
 
 function somaTotal(){

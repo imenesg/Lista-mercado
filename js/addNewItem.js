@@ -2,7 +2,7 @@ var inputName = document.querySelector(".name_new_item");
 
 var inputPreco = document.querySelector(".price_new_item");
 
-var botaoName = document.querySelector(".icon_edit");
+var botaoName = document.querySelector(".icon_add");
 
 var listaItens = document.querySelector(".itens_section");
 
@@ -24,6 +24,8 @@ function addNewItem() {
                                 <p>${inputName.value}</p>
                                 <div class="price_delete">
                                     <span >R$ <span class="price"> ${inputPreco.value}</span></span>
+                                    
+                                    
                                     <div class="box_icon icon_delete">
                                         <span class="material-icons icone">delete</span>
                                     </div>
