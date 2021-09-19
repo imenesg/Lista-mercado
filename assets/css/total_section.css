@@ -1,9 +1,14 @@
 .total_section{
-
+    display: flex;
+    justify-content: end;
 }
 .total{
-    color: var(--colorGreenVariant);
+    color: var(--colorRed);
     font-size: 2.5rem;
-    text-align: right;
+    
     margin-top: 2.50rem;
+
+    background-color: var(--colorRedVariant);
+    padding: .5rem;
+    border-radius: 9999999px;
 }

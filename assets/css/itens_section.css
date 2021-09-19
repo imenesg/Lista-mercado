@@ -7,11 +7,15 @@
     justify-content: space-between;
     width: 100%;
     border-radius: 10px;
-    background-color: var(--colorGrey);
+    background-color: var(--colorBlue);
     font-size: 1.5rem;
 
     margin-top: 1.25rem;
 }
+.itens_section .item p{
+    color: #fff;
+}
+
 .price_delete{
     display: flex;
     align-items: center;
@@ -20,6 +24,7 @@
 }
 .price_delete>span{
     color: var(--colorGreen);
+    
     
 }
 .icon_delete{
