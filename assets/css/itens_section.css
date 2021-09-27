@@ -15,6 +15,7 @@
 .itens_section .item p{
     color: #fff;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .price_delete{
@@ -25,8 +26,7 @@
 }
 .price_delete>span{
     color: var(--colorGreen);
-    
-    
+    cursor: pointer;  
 }
 .icon_delete{
     color: var(--colorRed);

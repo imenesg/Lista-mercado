@@ -17,12 +17,16 @@
     <link rel="stylesheet" href="assets/css/itens_section.css">
     <link rel="stylesheet" href="assets/css/total_section.css">
     <link rel="stylesheet" href="assets/css/modalChanges.css">
+    <link rel="stylesheet" href="assets/css/helpModal.css">
 </head>
 
 <body>
     <header class="container">
         <div class="logo">
             <img src="assets/img/logo.png" alt="">
+        </div>
+        <div class="Help box_icon">
+            <span class="material-icons ">help_outline</span>
         </div>
     </header>
 
@@ -95,11 +99,57 @@
 
     </div>
 
+
+
+    <!-- The Modal -->
+    <div id="Helpmodal" class="Helpmodal">
+
+        <!-- Modal content -->
+        <div class="Helpmodal-content container">
+            <span class="Helpclose box_icon">&times;</span>
+            <h2>Como adicionar um produto?</h2>
+            <ol>
+                <li> Insira o nome do produto e o preço nos campos abaixo.
+                </li>
+                <li>Clique no lápis verde.
+                </li>
+            </ol>
+
+            <h2>Como alterar itens (nome ou preço ) ?
+            </h2>
+            <ol>
+                <li> Clique em cima do que deseja alterar.
+
+                </li>
+                <li>Insira o nome ou valor correto no campo que irá surgir .
+
+                </li>
+                <li>Clique em “OK”.</li>
+                <p>PS: Você pode clicar no “X” vermelho apos o campo de correção e nada irá ser alterado. </p>
+            </ol>
+
+
+            <h2>Como excluir um item ?
+
+            </h2>
+            <ol>
+                <li>Clique na lixeira vermelha que está na linha do item que deseja excluir.
+
+                </li>
+
+
+
+
+        </div>
+
+    </div>
+
     <script src="js/addNewItem.js"></script>
     <script src="js/total.js"></script>
     <script src="js/deleteItem.js"></script>
     <script src="js/modalChangesTogle.js"></script>
     <script src="js/changeprice-name.js"></script>
+    <script src="js/helpmodal.js"></script>
 
 </body>
 

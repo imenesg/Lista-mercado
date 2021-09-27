@@ -1,5 +1,8 @@
 header{
     background-color: var(--colorBlue);
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
     
 }
 .logo{
@@ -8,3 +11,10 @@ header{
 .logo img{
     width: 100%;
 }
+
+.Help{
+    color: var(--colorGreen);
+    font-weight: bolder;
+}
+
+
