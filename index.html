@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/add_item_section.css">
     <link rel="stylesheet" href="assets/css/itens_section.css">
     <link rel="stylesheet" href="assets/css/total_section.css">
+    <link rel="stylesheet" href="assets/css/modalChanges.css">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
         <section class="itens_section">
 
             <div class="item container">
-                <p>...</p>
+                <p class="itemName">...</p>
                 <div class="price_delete">
 
                     <span class="full_price_place">R$ <span class="price"> 00</span></span>
@@ -51,7 +52,7 @@
                     <div class="box_icon icon_delete">
                         <span class="material-icons icone">delete</span>
                     </div>
-                    
+
                     <div class="box_icon icon_delete">
                         <span class="material-icons icone">delete</span>
                     </div>
@@ -59,11 +60,11 @@
                 </div>
             </div>
 
-            
 
-            
 
-            
+
+
+
 
         </section>
 
@@ -77,11 +78,29 @@
 
     </main>
 
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+
+
+
+            <input class="correctPrice" type="number" placeholder="Preco Item" value="">
+
+            <div class="button-ok box_icon">
+                <p>OK</p>
+            </div>
+            <span class="close box_icon">&times;</span>
+        </div>
+
+    </div>
 
     <script src="js/addNewItem.js"></script>
     <script src="js/total.js"></script>
     <script src="js/deleteItem.js"></script>
+    <script src="js/modalChangesTogle.js"></script>
+    <script src="js/changeprice-name.js"></script>
+
 </body>
 
 </html>

@@ -10,20 +10,17 @@ botaoName.addEventListener("click", addNewItem);
 
 localStorage.getItem("list");
 
-listaItens.innerHTML = localStorage.getItem("list");    
+function updateList() {
+  localStorage.setItem("list", listaItens.innerHTML);
+}
 
-
-
+listaItens.innerHTML = localStorage.getItem("list");
 
 function addNewItem() {
-  console.log("funfando 0");
-  /*console.log(inputName.value);*/
-  console.log(listaItens);
-
   listaItens.innerHTML += `<div class="item container">
-                                <p>${inputName.value}</p>
+                                <p class="itemName">${inputName.value}</p>
                                 <div class="price_delete">
-                                    <span >R$ <span class="price"> ${inputPreco.value}</span></span>
+                                    <span class="full_price_place" >R$ <span class="price"> ${inputPreco.value}</span></span>
                                     
                                     
                                     <div class="box_icon icon_delete">
@@ -32,8 +29,14 @@ function addNewItem() {
                                 </div>
                             </div>`;
 
-                            somaTotal ();
-                            itemCounterDelete();
+  
+  inputName.value= "";
+  inputPreco.value = "";
 
-   localStorage.setItem("list", listaItens.innerHTML );
+
+
+  somaTotal();
+  itemCounterDelete();
+  itemCounterNamesandPrices();
+  updateList();
 }
