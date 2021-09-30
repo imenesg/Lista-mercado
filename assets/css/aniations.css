@@ -1,0 +1,20 @@
+
+.additem{
+    animation-name: addItem ;
+    animation-duration: 200Ms;
+}
+
+@keyframes addItem {
+    from {opacity: 0;}
+    to {opacity: 100;}
+  }
+
+  .removeitem{
+    animation-name: removeitem ;
+    animation-duration: 300Ms;
+}
+
+@keyframes removeitem {
+    from {opacity: 100;}
+    to {opacity: 0;}
+  }

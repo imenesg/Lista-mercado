@@ -15,6 +15,7 @@ header{
 .Help{
     color: var(--colorGreen);
     font-weight: bolder;
+    cursor: help !important;
 }
 
 

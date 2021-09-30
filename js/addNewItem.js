@@ -17,7 +17,7 @@ function updateList() {
 listaItens.innerHTML = localStorage.getItem("list");
 
 function addNewItem() {
-  listaItens.innerHTML += `<div class="item container">
+  listaItens.innerHTML += `<div class="item container additem">
                                 <p class="itemName">${inputName.value}</p>
                                 <div class="price_delete">
                                     <span class="full_price_place" >R$ <span class="price"> ${inputPreco.value}</span></span>
@@ -33,7 +33,11 @@ function addNewItem() {
   inputName.value= "";
   inputPreco.value = "";
 
-
+  let newestItem = document.querySelectorAll(".item")
+  
+  
+  setTimeout(function(){ newestItem[newestItem.length-1].classList.remove("additem"); }, 200);
+  
 
   somaTotal();
   itemCounterDelete();
