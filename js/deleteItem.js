@@ -12,11 +12,12 @@ function deleteItem() {
   let button = this;
   button.closest(".item").classList.add("removeitem");
 
-  setTimeout(()=> button.closest(".item").remove(), 250);
+  setTimeout(()=> (button.closest(".item").remove(), somaTotal() ,updateList()), 250);
 
-  /*this.closest(".item").remove();*/ 
+  
 
-  somaTotal();
-  updateList();
+  
+  
+  console.log("deletado");
 }
 itemCounterDelete();

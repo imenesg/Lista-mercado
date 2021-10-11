@@ -12,6 +12,7 @@ localStorage.getItem("list");
 
 function updateList() {
   localStorage.setItem("list", listaItens.innerHTML);
+  console.log("update");
 }
 
 listaItens.innerHTML = localStorage.getItem("list");
