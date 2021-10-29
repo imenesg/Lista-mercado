@@ -63,7 +63,7 @@ function itemCounterXandButtonOKPrice() {
 
   var fullItem = document.querySelectorAll(".item");
 
-  var inputNewName = document.querySelectorAll(".correctName");
+  
 
   var inputNewPrice = document.querySelectorAll(".correctPrice");
 
@@ -147,6 +147,7 @@ function adjustName(correctName) {
   itemCounterNamesandPrices();
 
   closeModal();
+  updateList();
 }
 
 function adjustPrice(correctPrice) {
@@ -158,6 +159,7 @@ function adjustPrice(correctPrice) {
   itemCounterNamesandPrices();
 
   closeModal();
+  updateList();
 }
 
 itemCounterNamesandPrices();
