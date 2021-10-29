@@ -8,11 +8,27 @@ var listaItens = document.querySelector(".itens_section");
 
 botaoName.addEventListener("click", addNewItem);
 
+
+inputName.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.querySelector(".icon_add").click();
+  }
+});
+
+
+inputPreco.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.querySelector(".icon_add").click();
+  }
+});
+
 localStorage.getItem("list");
 
 function updateList() {
   localStorage.setItem("list", listaItens.innerHTML);
-  console.log("update");
+  
 }
 
 listaItens.innerHTML = localStorage.getItem("list");

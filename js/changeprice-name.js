@@ -1,7 +1,3 @@
-//take the inputs of the news name and price
-/*var inputNewName = document.querySelector(".correctName");
-
-var inputNewPrice = document.querySelector(".correctPrice");*/
 //
 
 //take the button that confirms the new name and price
@@ -19,9 +15,6 @@ var fullItem = document.querySelector(".item");
 var corretName;
 var corretPrice;
 var selectItem;
-
-/*itemName.addEventListener("click", takeNewName)  
-itemPrice.addEventListener("click", takeNewPrice)*/
 
 function itemCounterNamesandPrices() {
   var itemName = document.querySelectorAll(".itemName");
@@ -43,11 +36,56 @@ function itemCounterXandButtonOK() {
 
   var fullItem = document.querySelectorAll(".item");
 
+  var inputNewName = document.querySelectorAll(".correctName");
+
+  var inputNewPrice = document.querySelectorAll(".correctPrice");
+
   for (i = 0; i < fullItem.length; i++) {
+    var i;
     span[i].addEventListener("click", closeModal);
     buttonOK[i].addEventListener("click", correctTheitem);
+
+    inputNewName[i].addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        this.nextSibling.nextSibling.click();
+      }
+    });
   }
 }
+
+
+
+function itemCounterXandButtonOKPrice() {
+  var span = document.querySelectorAll(".close");
+
+  var buttonOK = document.querySelectorAll(".button-ok");
+
+  var fullItem = document.querySelectorAll(".item");
+
+  var inputNewName = document.querySelectorAll(".correctName");
+
+  var inputNewPrice = document.querySelectorAll(".correctPrice");
+
+  for (i = 0; i < fullItem.length; i++) {
+    var i;
+    span[i].addEventListener("click", closeModal);
+    buttonOK[i].addEventListener("click", correctTheitem);
+
+    inputNewPrice[i].addEventListener("keyup", function (event) {
+      
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          this.nextSibling.nextSibling.click();
+        }
+      
+    });
+  }
+}
+
+
+
+
 
 function takeNewName() {
   selectItem = this.closest(".item");
@@ -61,7 +99,7 @@ function takeNewName() {
           <p>OK</p>
           
     </div> <span class="close box_icon">&times;</span>`);
-
+    
   itemCounterXandButtonOK();
 }
 
@@ -80,7 +118,8 @@ function takeNewPrice() {
           
     </div> <span class="close box_icon">&times;</span>`);
 
-  itemCounterXandButtonOK();
+    
+    itemCounterXandButtonOKPrice();
 }
 
 function correctTheitem() {

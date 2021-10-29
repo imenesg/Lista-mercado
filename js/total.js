@@ -15,6 +15,6 @@ function somaTotal() {
 
     totalToPay.innerHTML = `R$${total}`;
   }
-  console.log("somado");
+  
 }
 somaTotal();
