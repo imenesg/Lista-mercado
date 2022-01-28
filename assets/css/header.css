@@ -1,9 +1,17 @@
 header{
     background-color: var(--colorBlue);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25em;
+    
+}
+header .headerContent{
+    display: flex;
     justify-content: space-between ;
     align-items: center;
-    
+    width: 100%;
+    max-width: 800px;
 }
 .logo{
     width: 3.125rem;
