@@ -1,0 +1,21 @@
+{
+  "background_color": "#ffffff",
+  "description": "lista mercado",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "lista mercado",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "lista mercado",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "assets/img/favicon.ico"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "pt"
+}
